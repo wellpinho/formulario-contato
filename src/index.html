@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exotic Drinks com você realizando sonhos!">
+    <meta name="author" content="Wellington Pinho - wellpinho@outlook.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wellpinho</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="" type="img/logo.png">
+</head>
+
+<body>
+    <div id="app">
+                    <div class="col-md-7 col-xs-12">
+                        <form action="acao.php" method="POST" class="form">
+                            <h4>Peça um orçamento sem compromisso</h4>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="name7"><i
+                                            class="fas fa-signature"></i></span>
+                                </div>
+                                <input type="text" name="nome" class="form-control" placeholder="Nome e sobrenome"
+                                    aria-label="nome" aria-describedby="name" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="email1"><i
+                                            class="fas fa-envelope-open-text"></i></span>
+                                </div>
+                                <input type="email" name="email" class="form-control" placeholder="Email principal"
+                                    aria-label="email" aria-describedby="email" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="tel1"><i
+                                            class="fas fa-mobile-alt"></i></span>
+                                </div>
+                                <input type="tel" name="tel" class="form-control" placeholder="Telefone" aria-label="tel"
+                                    aria-describedby="tel" minlength="9" maxlength="11" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="cidade1"><i
+                                            class="fas fa-city"></i></span>
+                                </div>
+                                <input type="text" name="cidade" class="form-control" placeholder="Cidade"
+                                    aria-label="tel" aria-describedby="cidade" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="data1"><i
+                                            class="far fa-calendar-alt"></i></span>
+                                </div>
+                                <input type="date" name="data" class="form-control" aria-label="data"
+                                    aria-describedby="data" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="hora1"><i
+                                            class="far fa-clock"></i></span>
+                                </div>
+                                <input type="time" name="hora" class="form-control" aria-label="hora"
+                                    aria-describedby="hora" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="convidados"><i
+                                            class="fas fa-users"></i></span>
+                                </div>
+                                <input type="number" name="qtConvidados" class="form-control"
+                                    placeholder="Quantidade de convidados" aria-label="convidados"
+                                    aria-describedby="convidados" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  img-input" id="msg1"><i
+                                            class="fas fa-comment-dots"></i></span>
+                                </div>
+                                <textarea name="msg" name="msg" class="form-control"
+                                    placeholder="Detalhes sobre o evento..." required="required"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="SUA-CHAVE-KEY"></div>
+                            <button type="submit" name="btn-enviar" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="footer-copyright text-center py-3">© 2019 Copyright
+                            <a href="https://pt.wikipedia.org/wiki/Direito_autoral" target="_blank"> DOMINIO.COM</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="footer-copyright text-center py-3">Desenvolvido por:
+                            <a href="https://wellpinho.com.br" target="_blank"> Wellington Pinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!--/fim do id pai app-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
